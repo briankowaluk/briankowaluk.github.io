@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Track Record</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --ink: #1a1a2e;
+      --paper: #f5f2eb;
+      --accent: #c0392b;
+      --muted: #6b6b6b;
+      --rule: #d9d4c7;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.5;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    .back-link {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      margin-bottom: 1.2rem;
+    }
+
+    .back-link:hover { text-decoration: underline; }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .header-sub {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* KLC blocks */
+    .klc {
+      margin-bottom: 3.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    .klc:nth-child(2)  { animation-delay: 0.1s; }
+    .klc:nth-child(3)  { animation-delay: 0.2s; }
+    .klc:nth-child(4)  { animation-delay: 0.3s; }
+    .klc:nth-child(5)  { animation-delay: 0.4s; }
+    .klc:nth-child(6)  { animation-delay: 0.5s; }
+
+    .klc-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .klc h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .klc p {
+      font-size: 0.93rem;
+      color: #3a3a4a;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .klc p:last-child { margin-bottom: 0; }
+
+    .supervisor {
+      margin-top: 1.2rem;
+      padding: 1rem 1.2rem;
+      border-left: 3px solid var(--rule);
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .supervisor strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <a class="back-link" href="index.html">← Back to Resume</a>
+    <h1>Track Record</h1>
+    <p class="header-sub">Key Leadership Competencies (KLC) — EC-07 Application</p>
+  </header>
+
+  <!-- KLC1 -->
+  <div class="klc">
+    <div class="klc-label">KLC 1</div>
+    <h2>Create Vision and Strategy</h2>
+    <p>Since December 2021 (2.25 years), I have been the Unit Head (EC-06) and Acting Section Chief (EC-07) for the Innovation Secretariat in the Health Statistics Branch. The mandate of this team is to drive innovation across the various activities of Statistics Canada's health statistics program. There are several ways in which I try to demonstrate this behavior on a daily basis.</p>
+    <p>First, I create a vision and strategy for this team by reviewing organizational strategic documents, actively listening during meetings with senior management, and consulting with my peers in order to identify key priorities and challenges they face. For example, I have heard from senior management and colleagues that survey response rates have decreased and will not likely recover, so new sources of data will need to be identified in order to measure various population health concepts. They also indicated that collection costs for traditional data sources were increasing, highlighting the need for cost-effective alternatives.</p>
+    <p>Because of this information, one of the main actions my team takes is to identify alternative sources of health data and test them for relevance to the population health program through a series of assessments. For example, a gap in nutrition data was identified, and my team identified transaction data from grocery retailers as a potential source to fill this need. My team set up a proof of concept project to analyze the transaction data to see if it could produce indicators and trends about nutrition that were relevant. Through the envisioning phase to the completion of the proof of concept, I held numerous meetings with stakeholders to communicate the objectives, potential benefits, project plan, and results. The proof of concept successfully created indicators of nutrition.</p>
+    <p>My team and I have used this approach with new technologies and in several other health domains. As a result, we have gained a significant amount of knowledge of the policies, applications, and technical implementation considerations and have provided advice to the Director, Director General, and Assistant Chief Statistician on related issues, as well as provided input to various strategies like the Oral Health Statistics Program Treasury Board Submission and the Food Policy Renewal of Canada.</p>
+  </div>
+
+  <!-- KLC2 -->
+  <div class="klc">
+    <div class="klc-label">KLC 2</div>
+    <h2>Mobilize People and Leadership</h2>
+    <p>Since December 2021 (2.25 years), I have been the Unit Head (EC-06) and Acting Section Chief (EC-07) for the Innovation Secretariat in the Health Statistics Branch. In this role there are several examples of daily activities that demonstrate my competency to mobilize people and provide leadership.</p>
+    <p>For example, in order to create a sense of common purpose and direction amongst my team, I maintain an active collaborative space in MS Teams. I use MS Teams to store active documents so that they can be shared easily and worked on collaboratively. I also maintain a task board displayed to the whole team, showing when certain tasks are due, new tasks, how they fit into work priorities, and who is assigned to each task. This has the benefit of showing the team what everyone is working on, allows for linkages to be made across projects, and identifies areas to provide support while waiting on dependencies.</p>
+    <p>I also maintain weekly one-on-one and team meetings to discuss projects, communicate goals and expectations, address management or administrative needs, share information, and discuss learning and performance. From time to time, I organize a "jam session" — one team member presents the status of a project or findings from analysis to the rest of the team, and in a structured way, others provide input by challenging or building on certain ideas. This allows everyone to bring their different expertise and background to each project, giving them a sense of ownership and a common vision for the outcome.</p>
+    <p>These daily activities are aimed at ensuring that the team is operating with the same information and aware of the next steps for each project, so they can proactively perform tasks to meet project objectives and can switch between projects and priorities with little friction as needs arise. As a result, the team has completed and contributed to numerous projects delivering on branch, agency, and Government of Canada priorities — steadily taking on more responsibilities, building foundational assets, and building credibility with stakeholders.</p>
+    <div class="supervisor">
+      <strong>Supervisor: TD Nguyen, Assistant Director, Centre for Direct Health Measures</strong>
+      December 2021 – Present &nbsp;·&nbsp; EC-06 and EC-07 level<br>
+      (613) 302-1685 &nbsp;·&nbsp; thacdung.nguyen@statcan.gc.ca
+    </div>
+  </div>
+
+  <!-- KLC3 -->
+  <div class="klc">
+    <div class="klc-label">KLC 3</div>
+    <h2>Collaborate with Partners and Stakeholders</h2>
+    <p>Since December 2021 (2.25 years), I have been the Unit Head (EC-06) and Acting Section Chief (EC-07) for the Innovation Secretariat in the Health Statistics Branch. In my role as Section Chief, I consistently engage in collaborative efforts with both internal teams and external stakeholders to ensure project success.</p>
+    <p>One ongoing example is our current project to develop a data lake and analytics environment for oral health. Throughout the project lifecycle, I actively collaborate with our IT DAS team, internal oral health subject matter experts and survey program managers, OPMIC, DAD, and Health Canada representatives to gather requirements, define project scope, and manage expectations. Internally, I organize regular cross-functional meetings to ensure alignment among team members, gather input from various perspectives, and address any challenges. For instance, during our planning sessions, I facilitated discussions to prioritize data sources to load into the environment based on client feedback and technical feasibility.</p>
+    <p>Externally, I maintain open lines of communication with Health Canada stakeholders, including management and analysts. I schedule regular check-ins, status updates, and demos to gather feedback, validate requirements, and ensure the environment is functional and on track. For example, when Health Canada was experiencing issues with the data lake's IT infrastructure, I set up a series of measures to proactively identify any infrastructure issues and established a communication protocol to ensure quick resolution.</p>
+    <p>By fostering a collaborative environment both internally and externally, I leverage the collective expertise of all stakeholders to deliver high-quality solutions that meet client needs and exceed expectations. This ongoing commitment to collaboration not only strengthens client relationships but also drives innovation and continuous improvement within our organization.</p>
+    <div class="supervisor">
+      <strong>Supervisor: TD Nguyen, Assistant Director, Centre for Direct Health Measures</strong>
+      December 2021 – Present &nbsp;·&nbsp; EC-06 and EC-07 level<br>
+      (613) 302-1685 &nbsp;·&nbsp; thacdung.nguyen@statcan.gc.ca
+    </div>
+  </div>
+
+  <!-- KLC4 -->
+  <div class="klc">
+    <div class="klc-label">KLC 4</div>
+    <h2>Promote Innovation and Guide Change</h2>
+    <p>Since December 2021 (2.25 years), I have been the Unit Head (EC-06) and Acting Section Chief (EC-07) for the Innovation Secretariat in the Health Statistics Branch. In my role as Section Chief, promoting innovation and guiding change is essential to adapt to the evolving data landscape, statistical methodologies, and technological advancements.</p>
+    <p>One ongoing example is an initiative to improve the collection and processing phases of a nutritional survey using AI (computer vision) technology. To promote innovation and guide this change effectively, I initiated a multi-phase approach involving collaboration with internal teams, external stakeholders, and technology partners. I conducted a comprehensive review of emerging technologies and best practices in digital data collection, identifying opportunities to enhance efficiency, accuracy, and decrease response burden.</p>
+    <p>I led a cross-functional team comprising data scientists, IT specialists, and survey program managers to develop and pilot test an AI image recognition model tailored to our program's unique requirements — predicting the nutritional profile of an image of a meal. Throughout the pilot phase, I solicited feedback from end-users and stakeholders to identify usability issues, technical challenges, and areas for improvement. Based on feedback and performance metrics gathered during the pilot phase, I facilitated iterative refinements and ultimately provided a recommendation to the survey program Director on the feasibility of applying this technology to existing surveys.</p>
+    <p>While our organization was not able to implement this technology as part of a national nutrition survey, by promoting innovation and guiding change the organization was able to make an informed decision based on knowledge gained from applied experimentation, gain an in-depth understanding of an emerging technology, and mitigate financial risks associated with premature implementation.</p>
+    <div class="supervisor">
+      <strong>Supervisor: TD Nguyen, Assistant Director, Centre for Direct Health Measures</strong>
+      December 2021 – Present &nbsp;·&nbsp; EC-06 and EC-07 level<br>
+      (613) 302-1685 &nbsp;·&nbsp; thacdung.nguyen@statcan.gc.ca
+    </div>
+  </div>
+
+  <!-- KLC5 -->
+  <div class="klc">
+    <div class="klc-label">KLC 5</div>
+    <h2>Achieve Results</h2>
+    <p>Since December 2021 (2.25 years), I have been the Unit Head (EC-06) and Acting Section Chief (EC-07) for the Innovation Secretariat in the Health Statistics Branch. In my role as Section Chief, an ongoing example of this behavior is our recent effort to maximize dissemination activities for population health statistical outputs.</p>
+    <p>To ensure the success of this initiative, I adopted a systematic approach focused on being evidence-driven and minimizing costs. Firstly, we conducted an assessment of our existing dissemination activities, identifying bottlenecks, inefficiencies, and areas for improvement. We then identified Statistics Canada web analytics data as a source and collaborated closely with cross-functional teams — including innovation and data analysts, communications staff, and survey program managers — to analyze the data and develop a targeted improvement plan. Together, we set ambitious goals to identify the factors that drive web-based engagement with population health statistical outputs.</p>
+    <p>By leveraging statistical analysis techniques, we identified patterns, trends, and potential barriers. For example, we noticed that Daily articles published on Wednesdays tended to have the most engagement. We also identified March and November as the months where publishing would result in the most online engagement with statistical outputs. We shared this information with communications staff and survey program managers so that they could develop tailored communication strategies to encourage engagement.</p>
+    <p>As a result of these efforts, we received positive feedback from stakeholders about the results being actionable and constructive. By consistently demonstrating the ability to achieve tangible results, I contribute to the advancement of our organization's mission and objectives in the field of health statistics.</p>
+  </div>
+
+</div>
+</body>
+</html>
